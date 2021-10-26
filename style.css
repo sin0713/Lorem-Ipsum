@@ -252,6 +252,10 @@ h6 {
   padding-top: 20px;
 }
 
+.left-items a {
+  color: #000;
+}
+
 .right-items {
   text-align: left;
 }
