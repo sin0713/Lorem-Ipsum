@@ -27,18 +27,22 @@ h6 {
 
 .container {
   width: 1024px;
+  margin: 0 auto;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
 .nav-logo {
   height: 70px;
 }
 
-#nav-menu {
+#nav-menu ul {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 #nav-menu a {
@@ -158,9 +162,10 @@ h6 {
   height: auto;
 }
 
-.fa {
+.strength .fa {
   display: block;
   margin: 0 auto;
+  font-size: 60px;
 }
 
 .strength-heading {
@@ -240,8 +245,13 @@ h6 {
   text-align: left;
 }
 
+.sns {
+  padding-bottom: 5px;
+}
+
 .right-items .fa {
   padding-right: 20px;
+  font-size: 50px;
 }
 
 .right-items .fa:last-child {
@@ -290,7 +300,8 @@ footer p {
     position: relative;
     width: 50px;
     height: 40px;
-    border: 2px solid #ccffff;
+    border: 3px solid #ccc;
+    border-radius: 4px;
   }
   .menu-trigger span {
     position: absolute;
@@ -298,7 +309,7 @@ footer p {
     margin: 0 auto;
     width: 60%;
     height: 4px;
-    background-color: #ccffff;
+    background-color: #ccc;
     border-radius: 4px;
   }
   .menu-trigger span:nth-child(1) {
@@ -335,6 +346,10 @@ footer p {
     z-index: 9;
   }
 
+  #nav-menu ul {
+    justify-content: center;
+  }
+
   #nav-menu li {
     text-align: center;
     margin-bottom: 30px;
@@ -344,4 +359,93 @@ footer p {
     color: #fff;
     font-weight: bold;
   }
+
+  .main-visual {
+    height: 650px;
+    background-image: url(img/code.png);
+    background-size: cover;
+  }
+
+  .main-visual h1 {
+    padding-top: 200px 0 10px 0;
+    font-size: 40px;
+    color: #fff;
+  }
+
+  .main-visual p {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .image-none {
+    display: none;
+  }
+
+  .portfolio-images {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .portfolio-image {
+    width: 300px;
+    height: 250px;
+  }
+
+  .portfolio-image:nth-child(1) {
+    padding-top: 30px;
+  }
+
+  .portfolio-image:nth-child(3) {
+    padding: 10px 0;
+  }
+
+  .portfolio-image:nth-child(5) {
+    padding-bottom: 90px;
+  }
+
+  .strength-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .strength-wrapper > .strength:nth-child(2) {
+    padding: 10px 0;
+
+  }
+
+  .strength {
+    width: 60%;
+  }
+
+  .profile-contents, .contact-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-items, .left-items-container, .right-items {
+    text-align: center;
+  }
+
+  .name {
+    padding-top: 20px;
+  }
+
+  .sns {
+    padding-top: 20px;
+  }
+
+  .right-items .fa {
+    padding-right: 8px;
+  }
+
+  .right-items .fa:last-child {
+    padding: 0;
+  }
+
+
+
+
+
+
+
+
 }
