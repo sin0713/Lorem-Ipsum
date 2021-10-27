@@ -13,14 +13,23 @@
       <a href="">
         <img src="img/logo.png" class="nav-logo">
       </a>
-      <nav>
-        <ul class="nav-menu">
+
+      <div id="hm-icon">
+        <a class="menu-trigger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+      <div id="nav-menu">
+        <ul>
           <a href="#portfolio"><li>Portfolio</li></a>
           <a href="#feature"> <li>Feature</li></a>
           <a href="#profile"><li>Profile</li></a>
           <a href="#contact"><li>Contact</li></a>
         </ul>
-      </nav>
+      </div>
     </div>
   </header>
 
@@ -30,9 +39,9 @@
       <p>simply dummy text of the printing</p>
     </div>
     <div id="portfolio">
-      <div class="portfolio-contents">
+      <div class="portfolio-contents container">
         <h4 class="heading">Portfolio</h4>
-        <p>It is a long established fact that a reader will be distracted by the readable <br>
+        <p class="explanation">It is a long established fact that a reader will be distracted by the readable <br>
           content of a page when looking at its layout.<br>
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
@@ -47,9 +56,9 @@
       </div>
     </div>
     <div id="feature">
-      <div class="feature-contents">
+      <div class="feature-contents container">
         <h4 class="heading">Feature</h4>
-        <p>
+        <p class="explanation">
           It is a long established fact that a reader will be distracted by the readable <br>
           content of a page when looking at its layout. <br>
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
@@ -57,7 +66,7 @@
         <div class="strength-wrapper">
           <div class="strength">
             <i class="fa fa-code fa-4x"></i>
-            <h6>Strength1</h6>
+            <h6 class="strength-heading">Strength1</h6>
             <p>
               Contrary to popular belief, Lorem Ipsum
                is not simply random text. It has roots <br>
@@ -71,7 +80,7 @@
           </div>
           <div class="strength">
             <i class="fa fa-desktop fa-4x"></i>
-            <h6>Strength2</h6>
+            <h6 class="strength-heading">Strength2</h6>
             <p>
               Contrary to popular belief, Lorem Ipsum
                is not simply random text. It has roots <br>
@@ -84,7 +93,7 @@
           </div>
           <div class="strength">
             <i class="fa fa-cogs fa-4x"></i>
-            <h6>Strength3</h6>
+            <h6 class="strength-heading">Strength3</h6>
             <p>
               Contrary to popular belief, Lorem Ipsum
                is not simply random text. It has roots <br>
@@ -96,14 +105,12 @@
             </p>
           </div>
         </div>
-        
-
       </div>
     </div>
     <div id="profile">
-      <div class="profile-wrapper">
+      <div class="profile-wrapper container">
         <h4 class="heading">Profile</h4>
-        <p class="profile-sentence">It is a long established fact that a reader will be distracted by the readable <br>
+        <p class="explanation">It is a long established fact that a reader will be distracted by the readable <br>
           content of a page when looking at its layout. <br>
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
@@ -127,7 +134,7 @@
       </div>
     </div>
     <div id="contact">
-      <div class="contact-contents">
+      <div class="contact-contents container">
         <h4 class="heading">Contact</h4>
         <p class="explanation">It is a long established fact that a reader will be distracted by the readable <br>
           content of a page when looking at its layout. <br>
@@ -158,5 +165,8 @@
   <footer>
     <p>©︎ 2017 WebCamp</p>
   </footer>
+  
+  <script src="jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
