@@ -9,6 +9,9 @@ header {
   height: 70px;
   line-height: 70px;
   background-color: #ec715f;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 #hm-icon {
@@ -293,14 +296,14 @@ footer p {
   .menu-trigger,
   .menu-trigger span {
     display: inline-block;
-    transition: all .4s;
+    transition: all 0.4s;
     box-sizing: border-box;
   }
   .menu-trigger {
     position: relative;
     width: 50px;
     height: 40px;
-    border: 3px solid #ccc;
+    border: 3px solid #fff;
     border-radius: 4px;
   }
   .menu-trigger span {
@@ -309,7 +312,7 @@ footer p {
     margin: 0 auto;
     width: 60%;
     height: 4px;
-    background-color: #ccc;
+    background-color: #fff;
     border-radius: 4px;
   }
   .menu-trigger span:nth-child(1) {
@@ -332,7 +335,6 @@ footer p {
     -webkit-transform: translateY(-10px) rotate(45deg);
     transform: translateY(-10px) rotate(45deg);
   }
-  
 
   #nav-menu {
     position: fixed;
@@ -340,19 +342,19 @@ footer p {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    width: 100%;
+    width: 50%;
     min-height: 100%;
     display: none;
     z-index: 9;
+    margin-top: 50px;
   }
 
   #nav-menu ul {
-    justify-content: center;
+    display: block;
   }
 
   #nav-menu li {
-    text-align: center;
-    margin-bottom: 30px;
+    margin: 15px 0;
   }
 
   #nav-menu a {
@@ -409,19 +411,21 @@ footer p {
 
   .strength-wrapper > .strength:nth-child(2) {
     padding: 10px 0;
-
   }
 
   .strength {
     width: 60%;
   }
 
-  .profile-contents, .contact-items {
+  .profile-contents,
+  .contact-items {
     flex-direction: column;
     align-items: center;
   }
 
-  .profile-items, .left-items-container, .right-items {
+  .profile-items,
+  .left-items-container,
+  .right-items {
     text-align: center;
   }
 
@@ -440,12 +444,4 @@ footer p {
   .right-items .fa:last-child {
     padding: 0;
   }
-
-
-
-
-
-
-
-
 }
